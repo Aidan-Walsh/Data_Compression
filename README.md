@@ -1,6 +1,6 @@
 # Data_Compression
 Here, we utilize the Burrow's Wheeler transform followed by "Move-To-Front" encoding, and further followed by Huffman compression for an efficient 
-compression algorithm for text files. 
+compression algorithm for text files. The following methods take a text file name from the command line, and outputs the compressed content into a file or take a file with the compressed contents and decompress into a new text file.  
 
 
 # Before Use
@@ -16,9 +16,9 @@ and "java" instead if these do not work.
   - "javac-algs4 BurrowsWheeler.java"
   - "javac-algs4 CircularSuffixArray.java"
   - "javac-algs4 MoveToFront.java"
-3. Run the following command that applies Burrow's Wheeler transform to text file "text.txt", then "Move-To-Front" encoding, followed by Huffman compression. Output is placed into "outputFileName" 
+3. Run the following command that applies Burrow's Wheeler transform to text file "text.txt", then "Move-To-Front" encoding, followed by Huffman compression. Output is placed into "outputFileName". This is the compression process: 
   - "java-algs4 BurrowsWheeler - < text.txt | java-algs4 MoveToFront - | java-algs4 edu.princeton.cs.algs4.Huffman - >| outputFileName
-4. To reverse the process on "outputFileName" to produce a copy "text-copy.txt"
+4. To reverse the process on "outputFileName" to produce a copy "text-copy.txt". This is the decompression process:
   - "java-algs4 edu.princeton.cs.algs4.Huffman + < outputFileName | java-algs4 MoveToFront + | java-algs4 BurrowsWheeler + >| text-copy.txt"
 
 
