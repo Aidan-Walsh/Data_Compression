@@ -1,6 +1,6 @@
 # Data_Compression
 Here, we utilize the Burrow's Wheeler transform followed by "Move-To-Front" encoding, and further followed by Huffman compression for an efficient 
-compression algorithm for text files. The following methods take a text file name from the command line, and outputs the compressed content into a file or take a file with the compressed contents and decompress into a new text file.  
+compression algorithm for text files. The following methods take a text file name from the command line, and outputs the compressed content into a file. You may also take a file with the compressed contents and decompress into a new text file.  
 
 
 # Before Use
